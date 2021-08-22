@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrousel 1</title>
+</head>
+<style>
+    body
+    {
+        margin: 0px;
+    }
+    .carrousel
+    {
+        width: 100%;
+        overflow: scroll;
+        padding: 30px;
+        position: relative;
+    }
+    .carrousel__container
+    {
+        /*el nowrap nos sirve para que el contenido
+        se muestre en una sola línea, así le damos uso al scrollbar*/
+        white-space: nowrap;
+        /*Para que la foto no tape los textos cuando se le haga hover*/
+        margin: 70px 0px;
+        /*para que no se corte la imagen cuando le hagamos hover*/
+        padding-bottom: 10px;
+    }
+    /*aquí se le da formato a las tarjetitas*/
+    .carrousel__item
+    {
+        background-color: yellowgreen;
+        width: 200px;
+        height: 250px;
+        border-radius: 20px;
+        overflow:hidden;
+        margin-right: 10px;
+        /*para que se acomoden los elementos en línea*/
+        display: inline-block;
+        /*para darle un diseño al cursor cuando se pose sobre ellos*/
+        cursor: pointer;
+        /*sirve para que se vea más suave cuando se resalte la tarjeta*/
+        transition: 450ms all;
+        /*sirve para que se resalte hacia el centro de la hoja*/
+        transform-origin:center;
+    }
+    /*Con la ~ hacemos que el efecto se aplique a todos los elementos de esa clase
+    Esto lo hacemos para que cuando ocurra el hover, se desplacen en lugar de empalmarse*/
+    .carrousel__item:hover ~ .carrousel__item
+    {
+        transform: translate3d(100px,0,0);
+    }
+    /*para que se haga opaco cada elemento del carrousel*/
+    .carrousel__container:hover .carrousel__item
+    {
+        opacity: 0.3;
+    }
+    /*para que se aumente el tamaño del elemento que está seleccionado y se vea claramente*/
+    .carrousel__container:hover .carrousel__item:hover
+    {
+        transform: scale(1.5);
+        opacity: 1;
+    }
+</style>
+<body>
+    <section class="carrousel">
+        <div class="carrousel__container">
+            <div class="carrousel__item">
+            </div>
+            <div class="carrousel__item">
+            </div>
+            <div class="carrousel__item">
+            </div>
+            <div class="carrousel__item">
+            </div>
+        </div>
+    </section>
+</body>
+</html>
