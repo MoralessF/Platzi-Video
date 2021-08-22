@@ -29,7 +29,7 @@
         .header__img
         {
             width: 200px;
-            margin-top: 10px;
+            margin-top: 3px;
             margin-left: 10px;
         }
         .header__menu
@@ -44,7 +44,7 @@
             position: absolute;
             width: 100px;
             text-align: right;
-            margin: 0px 0px 0px -14px;
+            margin: 0px 0px 0px -5px;
         }
         .header__menu:hover ul, ul:hover
         {
@@ -62,6 +62,11 @@
         .header__menu li a:hover
         {
             text-decoration: underline;
+        }
+        .header__menu p a
+        {
+            color: white;
+            text-decoration: none;
         }
         .header__menu--profile
         {
@@ -85,7 +90,10 @@
         .main
         {
             height: 300px;
-            /*align-items: center;*/
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         .main__title
         {
@@ -112,14 +120,18 @@
     </style>
     <body>
         <header class="header">
-            <a href="https://www.platzi.com/" > 
+            <a href="">
                 <img class="header__img LogoPpal" src="logo-platzi-video-BW2.png" alt="Logo de Platzi-Video">
             </a>
             <div class="header__menu">
                 <div class="header__menu--profile">
-                    <img src="user-icon.png" alt="Imagen de opciones de usuario">
+                    <a href="">
+                        <img src="user-icon.png" alt="Imagen de opciones de usuario">
+                    </a>
                     <p>
-                        Perfil
+                        <a href="">
+                            Perfil
+                        </a> 
                     </p>
                 </div>
                 <ul>
