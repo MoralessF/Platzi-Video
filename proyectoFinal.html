@@ -14,12 +14,11 @@
         body
         {
             margin:0px;
-            background-color: #AB88Ff;
+            background: linear-gradient(#AB88FF,#8f57fd);
             font-family: 'Muli', sans-serif;
         }
         .header
         {
-            background-color: #8f57fd;
             width:100%;
             height: 80px;
             display: flex;
@@ -66,7 +65,6 @@
         .header__menu--profile
         {
             margin-right: 8px;
-            
             display: flex;
             color: white;
             align-items: center;
@@ -114,6 +112,28 @@
         {
             color: white;
         }
+        .footer
+        {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+            width: 100%;
+        }
+        .footer a
+        {
+            color: white;
+            font-family: 'Muli',sans-serif;
+            font-size: 14px;
+            padding-left: 30px;
+            padding-right: 30px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .footer a:hover
+        {
+            text-decoration: underline;
+        }
     </style>
     <body>
         <header class="header">
@@ -128,8 +148,8 @@
                     </p>
                 </div>
                 <ul>
-                    <li><a href="/">Cuenta</a></li>
-                    <li><a href="/">Cerrar sesión</a></li>
+                    <li><a href="logIn.html">Cuenta</a></li>
+                    <li><a href="logIn.html">Cerrar sesión</a></li>
                 </ul>
             </div>
         </header>
@@ -140,4 +160,15 @@
             <input class="input" type="text" placeholder="Buscar...">
         </section>
     </body>
+    <footer class="footer">
+        <a href="">
+            Terminos de uso
+        </a>
+        <a href="">
+            Declaración de privacidad
+        </a>
+        <a href="">
+            Centro de ayuda
+        </a>
+    </footer>
 </html>
