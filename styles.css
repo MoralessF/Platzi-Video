@@ -95,6 +95,8 @@ body
     .login__container--register
     {
         font-size: 14px;
+        text-align: center;
+        cursor:default;
     }
     .login__container--register a
     {
@@ -107,6 +109,10 @@ body
     .login__container--register a:hover
     {
         text-decoration: underline;
+    }
+    .login__container--register a:active
+    {
+        font-size: 14px;
     }
     .input
     {
@@ -123,6 +129,10 @@ body
         height: 50px;
     }
     ::placeholder
+    {
+        color: white;
+    }
+    .input, select, textarea
     {
         color: white;
     }
@@ -144,10 +154,6 @@ body
     .button:hover
     {
         border: 2px solid white;
-    }
-    .login__container p
-    {
-        text-align: center;
     }
     .footer
     {
