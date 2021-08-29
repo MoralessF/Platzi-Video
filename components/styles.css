@@ -454,6 +454,67 @@ Esto lo hacemos para que cuando ocurra el hover, se desplacen en lugar de empalm
     opacity: 1;
 }
 
+.error 
+{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    margin-bottom: 130px;
+    width: 100%;
+}
+.error__info
+{
+    margin: 0px;
+}
+.wrap 
+{
+  margin: 0px auto;
+  /* width: 486px; */
+  width: 200px;
+}
+
+.box
+{
+  /* width: 160px;
+  height: 120px; */
+  width: 200px;
+  height: 180px;
+  float:inherit;
+  /* background: #347fc3;
+  border: 1px solid #fff; */
+  overflow: hidden;
+}
+
+.text
+{
+  text-align: center;
+  margin-top: 56px;
+  color: #fff;
+  /* font-size: 1.0em; */
+  font-size: 100px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+.animated 
+{
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+  }
+  .pulse {
+    animation-name: pulse;
+    animation-duration: 2s;
+  }
+
 @media only screen and (max-width:600px) 
 {
     .login__container
@@ -478,5 +539,18 @@ Esto lo hacemos para que cuando ocurra el hover, se desplacen en lugar de empalm
     .main
     {
         overflow-x:hidden;
+    }
+    .wrap 
+    {
+        width: 100%;
+    }
+    .box 
+    {
+         width: 100%;
+         margin: 0px auto;
+    }
+    .error
+    {
+        margin-top: 130px;
     }
 }
