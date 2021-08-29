@@ -1,0 +1,482 @@
+body
+{
+    margin:0px;
+    background: linear-gradient(#6c757d,#ff7b00);
+    font-family: 'Muli', sans-serif;
+    
+}
+.header
+{
+    width:100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__img
+{
+    width: 200px;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+.header__menu
+{
+    margin-right: 30px;
+}
+.header__menu ul
+{
+    display: none;
+    list-style: none;
+    padding: 0px;
+    position: absolute;
+    width: 100px;
+    text-align: right;
+    margin: 0px 0px 0px -5px;
+}
+.header__menu:hover ul, ul:hover
+{
+    display: block;
+}
+.header__menu li
+{
+    margin: 10px 10px;
+}
+.header__menu li a
+{
+    color: white;
+    text-decoration: none;
+}
+.header__menu li a:hover
+{
+    text-decoration: underline;
+}
+.header__menu--profile
+{
+    margin-right: 8px;
+    display: flex;
+    color: white;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__menu--profile img
+{
+    margin-right:8px;
+    width: 40px;
+}
+
+.header__menu--profile p
+{
+    margin:0px;
+}
+.main
+{
+    height: 300px;
+    margin-bottom: -40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__title
+{
+    color: white;
+    font-size: 25px;
+    cursor: default;
+    letter-spacing: 1px;
+}
+.input__search
+{
+    border: 2px solid white;
+    border-radius: 30px;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    font-size: 16px;
+    height: 50px;
+    padding: 0px 20px;
+    width: 70%;
+    background-color: rgba(255,255,255,0.1);
+    outline: none;
+}
+::placeholder
+{
+    color: white;
+}
+
+.login__container--socialMedia > div
+{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.login__container--socialMedia img
+{
+    width: 20px;
+    margin-right: 10px;
+}
+.login
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+.login__container
+{
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 60px 68px 40px;
+    color: white;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.login__container h2
+{
+    letter-spacing: 1px;
+    text-align: center;
+}
+.login__container--form
+{
+    display: flex;
+    flex-direction: column;
+}
+.login__container--form label
+{
+    font-size: 14px;
+    cursor: pointer;
+}
+.login__container--rememberMe
+{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.login__container--rememberMe input
+{
+    cursor: pointer;
+}
+.login__container--rememberMe a
+{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+.login__container--rememberMe a:hover
+{
+    text-decoration: underline;
+}
+.login__container--register
+{
+    font-size: 14px;
+    text-align: center;
+    cursor:default;
+    display: flex;
+    flex-direction: column;
+}
+.login__container--register a
+{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.login__container--register a:hover
+{
+    text-decoration: underline;
+}
+.login__container--register a:active
+{
+    font-size: 16px;
+}
+.input
+{
+    background-color: transparent;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 2px solid white;
+    font-family: 'Muli',sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    outline: none;
+    height: 50px;
+}
+::placeholder
+{
+    color: white;
+}
+.input, select, textarea
+{
+    color: white;
+}
+.button
+{
+    background-color: rgba(255,255,255,0.1);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Muli',sans-serif;
+    font-family: 16px;
+    font-weight: bold;
+    height: 50px;
+    letter-spacing: 1px;
+    margin:10px 0px;
+
+}
+.button:hover
+{
+    border: 2px solid white;
+}
+.footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+}
+.footer a
+{
+    color: white;
+    font-family: 'Muli',sans-serif;
+    font-size: 14px;
+    padding-left: 30px;
+    padding-right: 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.footer a:hover
+{
+    text-decoration: underline;
+}
+
+.register
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+.register__container
+{
+    background-color: rgba(255,255,255,0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 60px 68px 40px;
+    color: white;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.register__container h2
+{
+    letter-spacing: 1px;
+    text-align: center;
+}
+.register__container--form
+{
+    display: flex;
+    flex-direction: column;
+}
+.register__container--form label
+{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.register__toLogIn
+{
+    text-align: center;
+    cursor: default;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+.register__toLogIn a
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.register__toLogIn a:hover 
+{
+    text-decoration: underline;
+}
+.register__toLogIn a:active
+{
+    font-size: 16px;
+}
+
+.categories
+{
+    color: white;
+    width: 100%;
+    margin-top: 60px;
+    padding-left: 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.carrousel
+{   
+    overflow-x: scroll;
+    padding: 50px;
+    position:relative;
+    display: flex;
+    justify-content:left;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+    ::-webkit-scrollbar-thumb 
+    {
+        background: rgba(255,255,255,0.2);
+        border-radius: 4px;
+        
+    }
+    ::-webkit-scrollbar 
+    {
+        width: 8px; 
+        height: 8px;
+        background:transparent;
+        border-radius: 4px;
+       
+    }
+
+.carrousel__container
+{
+    /*el nowrap nos sirve para que el contenido
+    se muestre en una sola línea, así le damos uso al scrollbar*/
+    white-space: nowrap;
+    /*Para que la foto no tape los textos cuando se le haga hover*/
+    margin: 50px 0px;
+    /*para que no se corte la imagen cuando le hagamos hover*/
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+/*aquí se le da formato a las tarjetitas*/
+.carrousel-item
+{
+    background: linear-gradient(#6c757d,#ff7b00);
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    overflow:hidden;
+    margin-right: 10px;
+    /*para que se acomoden los elementos en línea*/
+    display: inline-block;
+    /*para darle un diseño al cursor cuando se pose sobre ellos*/
+    cursor: pointer;
+    /*sirve para que se vea más suave cuando se resalte la tarjeta*/
+    transition: 450ms all;
+    /*sirve para que se resalte hacia el centro de la hoja y empieze de izq a derecha*/
+    transform-origin:center;
+    position: relative;
+}
+/*Con la ~ hacemos que el efecto se aplique a todos los elementos de esa clase
+Esto lo hacemos para que cuando ocurra el hover, se desplacen en lugar de empalmarse*/
+.carrousel-item:hover ~ .carrousel-item
+{
+    transform: translate3d(100px,0,0);
+}
+/*para que se haga opaco cada elemento del carrousel*/
+.carrousel__container:hover .carrousel-item
+{
+    opacity: 0.3;
+}
+/*para que se aumente el tamaño del elemento que está seleccionado y se vea claramente*/
+.carrousel__container:hover .carrousel-item:hover
+{
+    transform: scale(1.5);
+    opacity: 1;
+}
+.carrousel-item__img
+{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+.carrousel-item__details
+{
+    background: linear-gradient(to top, rgba(0,0,0,0.9),0%,rgba(0,0,0,0),100%);
+    font-size: 15px;
+    font-family: 'Muli',sans-serif;
+    color: white;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*para organizar los íconos y los textos*/
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    
+}
+/*para darle un tamaño a los íconos de play y add*/
+.carrousel-item__details img
+{
+    width: 30px;
+    height: 30px;
+    
+}
+/*se puso para disminuir el margen entre los textos*/
+.carrousel-item__details p
+{
+    margin: 2px;
+}
+/*es para que aparezcan los detalles cuando el cursor pase por encima*/
+.carrousel-item:hover .carrousel-item__details
+{
+    opacity: 1;
+}
+
+@media only screen and (max-width:600px) 
+{
+    .login__container
+    {
+        background-color:transparent;
+        border: none;
+        padding:0px;
+        width: 100%;
+    }
+    .footer
+    {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .register__container
+    {
+        background-color:transparent;
+        border: none;
+        padding:0px;
+        width: 100%;
+    }
+    .main
+    {
+        overflow-x:hidden;
+    }
+}

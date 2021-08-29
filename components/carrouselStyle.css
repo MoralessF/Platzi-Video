@@ -1,0 +1,103 @@
+body
+{
+    margin: 0px;
+}
+.carrousel
+{   
+    overflow-x: scroll;
+    padding: 40px;
+    position:relative;
+    display: flex;
+    justify-content:left;
+}
+.carrousel__container
+{
+    /*el nowrap nos sirve para que el contenido
+    se muestre en una sola línea, así le damos uso al scrollbar*/
+    white-space: nowrap;
+    /*Para que la foto no tape los textos cuando se le haga hover*/
+    margin: 50px 0px;
+    /*para que no se corte la imagen cuando le hagamos hover*/
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+/*aquí se le da formato a las tarjetitas*/
+.carrousel-item
+{
+    background-color: yellowgreen;
+    width: 200px;
+    height: 250px;
+    border-radius: 20px;
+    overflow:hidden;
+    margin-right: 10px;
+    /*para que se acomoden los elementos en línea*/
+    display: inline-block;
+    /*para darle un diseño al cursor cuando se pose sobre ellos*/
+    cursor: pointer;
+    /*sirve para que se vea más suave cuando se resalte la tarjeta*/
+    transition: 450ms all;
+    /*sirve para que se resalte hacia el centro de la hoja y empieze de izq a derecha*/
+    transform-origin:center;
+    position: relative;
+}
+/*Con la ~ hacemos que el efecto se aplique a todos los elementos de esa clase
+Esto lo hacemos para que cuando ocurra el hover, se desplacen en lugar de empalmarse*/
+.carrousel-item:hover ~ .carrousel-item
+{
+    transform: translate3d(100px,0,0);
+}
+/*para que se haga opaco cada elemento del carrousel*/
+.carrousel__container:hover .carrousel-item
+{
+    opacity: 0.3;
+}
+/*para que se aumente el tamaño del elemento que está seleccionado y se vea claramente*/
+.carrousel__container:hover .carrousel-item:hover
+{
+    transform: scale(1.5);
+    opacity: 1;
+}
+.carrousel-item__img
+{
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+.carrousel-item__details
+{
+    background: linear-gradient(to top, rgba(0,0,0,0.9),0%,rgba(0,0,0,0),100%);
+    font-size: 15px;
+    font-family: 'Muli',sans-serif;
+    color: white;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*para organizar los íconos y los textos*/
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    
+}
+/*para darle un tamaño a los íconos de play y add*/
+.carrousel-item__details img
+{
+    width: 30px;
+    height: 30px;
+    
+}
+/*se puso para disminuir el margen entre los textos*/
+.carrousel-item__details p
+{
+    margin: 2px;
+}
+/*es para que aparezcan los detalles cuando el cursor pase por encima*/
+.carrousel-item:hover .carrousel-item__details
+{
+    opacity: 1;
+}
